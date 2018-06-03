@@ -4,7 +4,7 @@ Lane line dection using OpenCV in C++
 From the Python version: https://github.com/georgesung/road_lane_line_detection.git
 
 ## Dependencies
-* cmake
+* CMake
 * OpenCV
 
 ## Build
