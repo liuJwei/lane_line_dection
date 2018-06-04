@@ -61,7 +61,7 @@ int main( int argc, char** argv )
 
         cv::Mat blur_gray;
         cv::Size ksize = cv::Size(3,3);
-        cv::GaussianBlur(img_gray, blur_gray,ksize, 0);
+        cv::GaussianBlur(img_gray, blur_gray, ksize, 0);
 
         cv::Mat edges;
         cv::Canny(blur_gray, edges, low_threshold, high_threshold);
@@ -200,7 +200,7 @@ void draw_straight_lines(cv::InputOutputArray img, vector<cv::Vec4i> lines,  con
    double param =0, reps=0.01, aeps =0.01;
     if(right_lines_points.size() > 0)
     {
-        cv::fitLine(right_lines_points, fit_right_line, CV_DIST_L2, param,reps, aeps);
+        cv::fitLine(right_lines_points, fit_right_line, CV_DIST_L2, param, reps, aeps);
         right_m = fit_right_line[1]/fit_right_line[0];
         right_b = fit_right_line[3] - right_m * fit_right_line[2];
     }
