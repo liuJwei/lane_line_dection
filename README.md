@@ -19,3 +19,6 @@ From the Python version: https://github.com/georgesung/road_lane_line_detection.
 
 For example,
 ```./lane_line ../solidWhiteCurve.jpg```
+
+### Remarks
+Some research works can be continued based on this project. 2019.Mar.04
